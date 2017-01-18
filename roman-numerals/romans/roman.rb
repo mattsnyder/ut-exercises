@@ -25,5 +25,9 @@ module RomanNumerals
 
       Roman.new(int_val + other.int_val, roman_val + other.roman_val)
     end
+
+    def self.parse_int(int)
+      Parser.from_integer(int)
+    end
   end
 end
